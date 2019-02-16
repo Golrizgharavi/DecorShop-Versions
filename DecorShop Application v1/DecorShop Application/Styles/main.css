@@ -1,0 +1,86 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #a65822;
+
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+
+
+.BGImg {
+
+    position:relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.PImg1 {
+    background-image: url(../Images/pImg1.jpg);
+    min-height:100vh;
+}
+.PImg3 {
+    background-image: url(../Images/pImg3.jpg);
+    min-height: 100vh;
+}
+
+.BGImg .PTitle {
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #222;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.BGImg h1{font-size:80px;font-weight:bold;}
+
+.carousel-inner img{width:100%;}
+
+.section{padding-top:40px}
+
+
+.section .aboutMe{padding:20px;text-align:center;}
+.aboutMe .Title {
+
+    font-weight: bold;
+    font-size:  25px;
+    padding: 10px;
+    border-bottom: 2px solid #a65822;
+    display:inline-block;
+}
+
+
+.aboutMe .content{margin-top:30px}
+
+.toolImg{}
+.Resposive {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 400px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.SpecialBox{background-color:#494949;text-transform:uppercase;font-size:40px;text-align:center;max-height:400px;opacity:0.8;margin-left:20%; color:#fff;line-height:55px; padding:15% 10px}
+.Img2 {
+    background-attachment: scroll;
+    background-image: url(../Images/toolImg-w.jpg);
+    min-height: 400px;
+}
