@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/custom.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/main.css" rel="stylesheet" />
+
+
+    <script src="../Scripts/jquery-3.0.0.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+
+    <script src="/App/app.js"></script>
+    <script src="/App/services/shopService.js"></script>
+    <script src="/App/controllers/homeController.js"></script>
+    <script src="/App/controllers/aboutController.js"></script>
+
+</head>
+<body ng-controller="mainController" >
+    <div ng-app="views">
+
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#/" target="_blank" class="text-uppercase">Home</a></li>
+                            <li><a href="#/about" target="_blank" class="text-uppercase">About</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        <div class="container">
+            <div ng-view>
+
+            </div>
+        </div>
+        <footer class="Footer">
+
+            <div class="footer-copyright ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="title">Contact Info</div>
+                        <div class="info">
+                            <i>test@test.com</i>
+                            <i>(+1) 302-222-4444</i>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="title">Contact Hours</div>
+                        <div class="info">
+                            <i>Mondady to Sunday</i>
+                            <i>9am to 9pm</i>
+                        </div>
+                    </div>
+                </div>
+                <hr class="clearfix">
+                <p>&copy;2018- <span id="currentYear"></span> Micreez Angular JS App</p>
+            </div>
+
+
+            <script>
+
+
+                var CurrentYear = document.getElementById("currentYear");
+                CurrentYear.innerHTML = new Date().getFullYear();
+
+
+
+
+            </script>
+        </footer>
+    </div>
+   
+</body>
+</html>
